@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:flutter_application_testing/components/plants_card_grid.dart'; 
+import 'package:flutter_application_testing/components/plants_card_grid.dart';
 import 'package:flutter_application_testing/components/plants_data.dart';
 
 class NewsScreen extends StatelessWidget {

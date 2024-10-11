@@ -9,44 +9,45 @@ class ProfileScreen extends StatelessWidget {
       body: Stack(
         children: [
           const BackgroundImage(),
-          Column(
-            children: [
-              const SizedBox(height: 60),
-              CircleAvatar(
-                radius: 60,
-                backgroundImage: AssetImage('lib/images/profile_pict.jpg'),
-              ),
-              const SizedBox(height: 20),
-              Text(
-                'Bala Putra',
-                style: TextStyle(
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
+          SingleChildScrollView(
+            child: Column(
+              children: [
+                const SizedBox(height: 60),
+                CircleAvatar(
+                  radius: 60,
+                  backgroundImage: AssetImage('lib/images/profile_pict.jpg'),
                 ),
-              ),
-              const SizedBox(height: 10),
-              Text(
-                'balaputra20@gmail.com',
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.white.withOpacity(0.7),
+                const SizedBox(height: 20),
+                Text(
+                  'Bala Putra',
+                  style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
                 ),
-              ),
-              const SizedBox(height: 20),
-              InfoTile(
-                  icon: Icons.calendar_today,
-                  title: 'Tanggal Lahir',
-                  value: '23 Februari 2003'),
-              InfoTile(icon: Icons.star, title: 'Points', value: '255'),
-              const SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-               
-                },
-                child: const Text('Edit Profile'),
-              ),
-            ],
+                const SizedBox(height: 10),
+                Text(
+                  'balaputra20@gmail.com',
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.white.withOpacity(0.7),
+                  ),
+                ),
+                const SizedBox(height: 20),
+                InfoTile(
+                    icon: Icons.calendar_today,
+                    title: 'Tanggal Lahir',
+                    value: '23 Februari 2003'),
+                InfoTile(icon: Icons.star, title: 'Points', value: '255'),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: const Text('Edit Profile'),
+                ),
+                const SizedBox(height: 200),
+              ],
+            ),
           ),
         ],
       ),
